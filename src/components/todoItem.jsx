@@ -1,11 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 
-function TodoItem(props) {
-
-
-
+function ToDoItem(props) {
   return (
-    <div onClick = {() =>{
+    <div onClick={()=>{
       props.onChecked(props.id)
     }}>
       <li>{props.text}</li>
@@ -13,4 +10,4 @@ function TodoItem(props) {
   );
 }
 
-export default TodoItem;
+export default ToDoItem;
